@@ -40,6 +40,27 @@
     .skip-link:focus {
       top: 0;
     }
+    figure {
+      text-align: center;
+      margin: 1em 0;
+    }
+    figcaption {
+      font-style: italic;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      background-color: #f0f0f0;
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -73,35 +94,120 @@
   <!-- Main landmark/region with aria label -->
   <main id="maincontent" role="main" aria-label="Core page content" class="container">
     <h2>Welcome to Hi/Max Real Estate</h2>
-    <p>Content A here</p>
+
+    <!-- Content A -->
+    <section aria-labelledby="intro">
+      <h3 id="intro">Hi/Max Real Estate &amp; Houses</h3>
+      <p>
+        Buying or selling a home is likely the largest and most important transaction you’ll ever make. 
+        That’s why so many trust <strong>Hi/Max Real Estate</strong>, which according to Canadian consumers, 
+        has been voted <em>#1 Most Trusted Real Estate Agents in Canada six times in a row</em>.
+      </p>
+
+      <figure>
+        <img src="https://cdn.pixabay.com/photo/2018/02/27/15/38/home-3189326_1280.jpg" alt="Modern home exterior with green lawn" width="600">
+        <figcaption>Your dream home awaits with Hi/Max Real Estate.</figcaption>
+      </figure>
+
+      <p><a href="contact-en.html" class="btn btn-primary">Let’s Get Started</a></p>
+    </section>
 
     <div class="row">
+      <!-- Content B -->
       <aside class="col-md-4 pull-right" role="complementary" aria-label="Helpful resources sidebar">
-        Content B here
+        <h3>Related Resources</h3>
+        <p>
+          It's time to sell and find the next “one.” Let us help you navigate the ins &amp; outs of your next move.
+        </p>
+        <ul>
+          <li><a href="#">Looking for an upgrade?</a></li>
+          <li><a href="#">Buying tips</a></li>
+          <li><a href="#">How much is your current home worth?</a></li>
+        </ul>
       </aside>
 
+      <!-- Content C -->
       <section class="col-md-8" aria-labelledby="why-himax">
         <h3 id="why-himax" class="h3">Why Choose Hi/Max</h3>
-        <p>Content C here</p>
+        <p>
+          Hi/Max agents go above and beyond and always strive to be the best they can be. 
+          HI/Max is extremely community focused, and our agents are too!
+        </p>
+
+        <h4>Stats of Hi/Max</h4>
+        <table>
+          <caption>Hi/Max Sales Statistics</caption>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Quebec (Sold)</th>
+              <th>Ontario (Sold)</th>
+              <th>Single House Avg. Price</th>
+              <th>Condo Avg. Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021</td>
+              <td>50</td>
+              <td>100</td>
+              <td>$500,000</td>
+              <td>$189,000</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>100</td>
+              <td>200</td>
+              <td>$780,000</td>
+              <td>$240,000</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
 
+    <!-- Content D -->
     <section aria-label="Market and resources section">
-      <p>Content D here</p>
+      <h3>More Resources on How to Choose the Right Agent</h3>
+      <article>
+        <h4>What Are The Risks of Selling a Home Yourself?</h4>
+        <p>
+          We’ve all seen the videos, read the stories, and gasped at the images of people who thought 
+          they could conquer a project that would have been better left to the professionals.
+        </p>
+        <p><a href="#">Read more</a></p>
+      </article>
     </section>
 
+    <!-- Content F, G, H -->
     <section class="row" aria-label="Real-estate guidance articles">
       <article class="col-md-4" aria-labelledby="art-one">
-        <h4 id="art-one">Article F</h4>
-        <p>Content F here</p>
+        <h4 id="art-one">7 Questions to Ask a Real Estate Agent Before You Commit</h4>
+        <p>
+          According to research by the National Association of Realtors, there are considerable benefits 
+          to working with a real estate agent, including higher sale prices.
+        </p>
       </article>
+
       <article class="col-md-4" aria-labelledby="art-two">
-        <h4 id="art-two">Article G</h4>
-        <p>Content G here</p>
+        <h4 id="art-two">8 Reasons to Hire an Agent When Selling Your Home</h4>
+        <p>
+          With all the many different moving parts involved in selling your home, here are eight very 
+          valid reasons to have a real estate agent on speed dial.
+        </p>
       </article>
+
       <article class="col-md-4" aria-labelledby="art-three">
-        <h4 id="art-three">Article H</h4>
-        <p>Content H here</p>
+        <h4 id="art-three">Your Journey Starts with Hi/Max</h4>
+        <p>
+          Whether you’re buying your first home or selling your fifth, Hi/Max has the experience, 
+          community connections, and dedication to make your move stress-free and rewarding.
+        </p>
+        <ul>
+          <li><a href="#">Meet our agents</a></li>
+          <li><a href="#">Explore listings</a></li>
+          <li><a href="#">Book a consultation</a></li>
+        </ul>
       </article>
     </section>
 
